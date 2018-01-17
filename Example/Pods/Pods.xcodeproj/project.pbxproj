@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01DC054E200F3D770032DBA9 /* ASControlTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC0549200F3D770032DBA9 /* ASControlTarget.swift */; };
-		01DC054F200F3D770032DBA9 /* ASImageNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC054A200F3D770032DBA9 /* ASImageNode+Rx.swift */; };
-		01DC0550200F3D770032DBA9 /* ASTextNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC054B200F3D770032DBA9 /* ASTextNode+Rx.swift */; };
-		01DC0551200F3D770032DBA9 /* ASEditableTextNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC054C200F3D770032DBA9 /* ASEditableTextNode+Rx.swift */; };
-		01DC0552200F3D770032DBA9 /* ASControlNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC054D200F3D770032DBA9 /* ASControlNode+Rx.swift */; };
+		01DC0559200F3FC80032DBA9 /* ASControlTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC0554200F3FC80032DBA9 /* ASControlTarget.swift */; };
+		01DC055A200F3FC80032DBA9 /* ASEditableTextNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC0555200F3FC80032DBA9 /* ASEditableTextNode+Rx.swift */; };
+		01DC055B200F3FC80032DBA9 /* ASTextNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC0556200F3FC80032DBA9 /* ASTextNode+Rx.swift */; };
+		01DC055C200F3FC80032DBA9 /* ASImageNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC0557200F3FC80032DBA9 /* ASImageNode+Rx.swift */; };
+		01DC055D200F3FC80032DBA9 /* ASControlNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC0558200F3FC80032DBA9 /* ASControlNode+Rx.swift */; };
 		13AF00A5726E6914E033B280BA6A03B4 /* Pods-RxTexture_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8915E08912E9686A207575512950DFE /* Pods-RxTexture_Tests-dummy.m */; };
 		2E726518201A75CE58EB94872B0164BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		4F925CD5E5553EEC7CF8FF369B5B539A /* RxTexture-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBCF536C8045A61D5A4C99EB9657CD1 /* RxTexture-dummy.m */; };
@@ -34,11 +34,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01DC0549200F3D770032DBA9 /* ASControlTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASControlTarget.swift; sourceTree = "<group>"; };
-		01DC054A200F3D770032DBA9 /* ASImageNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASImageNode+Rx.swift"; sourceTree = "<group>"; };
-		01DC054B200F3D770032DBA9 /* ASTextNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASTextNode+Rx.swift"; sourceTree = "<group>"; };
-		01DC054C200F3D770032DBA9 /* ASEditableTextNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASEditableTextNode+Rx.swift"; sourceTree = "<group>"; };
-		01DC054D200F3D770032DBA9 /* ASControlNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASControlNode+Rx.swift"; sourceTree = "<group>"; };
+		01DC0554200F3FC80032DBA9 /* ASControlTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ASControlTarget.swift; path = ../RxTexture/Classes/ASControlTarget.swift; sourceTree = "<group>"; };
+		01DC0555200F3FC80032DBA9 /* ASEditableTextNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ASEditableTextNode+Rx.swift"; path = "../RxTexture/Classes/ASEditableTextNode+Rx.swift"; sourceTree = "<group>"; };
+		01DC0556200F3FC80032DBA9 /* ASTextNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ASTextNode+Rx.swift"; path = "../RxTexture/Classes/ASTextNode+Rx.swift"; sourceTree = "<group>"; };
+		01DC0557200F3FC80032DBA9 /* ASImageNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ASImageNode+Rx.swift"; path = "../RxTexture/Classes/ASImageNode+Rx.swift"; sourceTree = "<group>"; };
+		01DC0558200F3FC80032DBA9 /* ASControlNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ASControlNode+Rx.swift"; path = "../RxTexture/Classes/ASControlNode+Rx.swift"; sourceTree = "<group>"; };
 		0778321884C6D243B553E258C4137BAF /* RxTexture-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RxTexture-prefix.pch"; sourceTree = "<group>"; };
 		14FEA57E749E3E42ACD68A9A054D8BCC /* Pods-RxTexture_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RxTexture_Example-dummy.m"; sourceTree = "<group>"; };
 		1CBCF536C8045A61D5A4C99EB9657CD1 /* RxTexture-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RxTexture-dummy.m"; sourceTree = "<group>"; };
@@ -100,14 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01DC0548200F3D6D0032DBA9 /* Classes */ = {
+		01DC0553200F3FB50032DBA9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				01DC054D200F3D770032DBA9 /* ASControlNode+Rx.swift */,
-				01DC0549200F3D770032DBA9 /* ASControlTarget.swift */,
-				01DC054C200F3D770032DBA9 /* ASEditableTextNode+Rx.swift */,
-				01DC054A200F3D770032DBA9 /* ASImageNode+Rx.swift */,
-				01DC054B200F3D770032DBA9 /* ASTextNode+Rx.swift */,
+				01DC0558200F3FC80032DBA9 /* ASControlNode+Rx.swift */,
+				01DC0554200F3FC80032DBA9 /* ASControlTarget.swift */,
+				01DC0555200F3FC80032DBA9 /* ASEditableTextNode+Rx.swift */,
+				01DC0557200F3FC80032DBA9 /* ASImageNode+Rx.swift */,
+				01DC0556200F3FC80032DBA9 /* ASTextNode+Rx.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -133,7 +133,7 @@
 		1B0B882EE7FD496FFD4A8858290F141A /* RxTexture */ = {
 			isa = PBXGroup;
 			children = (
-				01DC0548200F3D6D0032DBA9 /* Classes */,
+				01DC0553200F3FB50032DBA9 /* Classes */,
 				B6B151ABB0493FFC2E81CFD13D4AA075 /* Support Files */,
 			);
 			name = RxTexture;
@@ -354,12 +354,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01DC0551200F3D770032DBA9 /* ASEditableTextNode+Rx.swift in Sources */,
-				01DC054F200F3D770032DBA9 /* ASImageNode+Rx.swift in Sources */,
-				01DC054E200F3D770032DBA9 /* ASControlTarget.swift in Sources */,
-				01DC0552200F3D770032DBA9 /* ASControlNode+Rx.swift in Sources */,
-				01DC0550200F3D770032DBA9 /* ASTextNode+Rx.swift in Sources */,
+				01DC0559200F3FC80032DBA9 /* ASControlTarget.swift in Sources */,
 				4F925CD5E5553EEC7CF8FF369B5B539A /* RxTexture-dummy.m in Sources */,
+				01DC055B200F3FC80032DBA9 /* ASTextNode+Rx.swift in Sources */,
+				01DC055D200F3FC80032DBA9 /* ASControlNode+Rx.swift in Sources */,
+				01DC055C200F3FC80032DBA9 /* ASImageNode+Rx.swift in Sources */,
+				01DC055A200F3FC80032DBA9 /* ASEditableTextNode+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
