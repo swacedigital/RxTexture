@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RxTexture_Example' do
+  pod 'RxTexture', :path => '../'
+
+  target 'RxTexture_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
