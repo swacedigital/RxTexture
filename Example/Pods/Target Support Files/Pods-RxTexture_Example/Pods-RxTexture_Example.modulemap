@@ -1,0 +1,6 @@
+framework module Pods_RxTexture_Example {
+  umbrella header "Pods-RxTexture_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
