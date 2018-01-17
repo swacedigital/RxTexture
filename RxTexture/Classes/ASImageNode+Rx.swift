@@ -14,8 +14,8 @@ import AsyncDisplayKit
 extension Reactive where Base: ASImageNode {
 
     /// Bindable sink for `image` property.
-    public var image: UIBindingObserver<Base, UIImage> {
-        return UIBindingObserver(UIElement: self.base) { control, value in
+    public var image: Binder<UIImage> {
+        return Binder(self.base) { control, value in
             control.image = value
         }
     }
@@ -24,8 +24,8 @@ extension Reactive where Base: ASImageNode {
 extension Reactive where Base: ASNetworkImageNode {
 
     /// Bindable sink for `url` property.
-    public var url: UIBindingObserver<Base, URL> {
-        return UIBindingObserver(UIElement: self.base) { control, value in
+    public var url: Binder<URL> {
+        return Binder(self.base) { control, value in
             control.url = value
         }
     }

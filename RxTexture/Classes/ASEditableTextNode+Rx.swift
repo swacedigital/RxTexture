@@ -41,7 +41,7 @@ extension Reactive where Base: ASEditableTextNode {
                 .startWith(text)
         }
 
-        let bindingObserver = UIBindingObserver(UIElement: self.base) { (textNode, text: String?) in
+        let bindingObserver = Binder(self.base) { (textNode, text: String?) in
             // This check is important because setting text value always clears control state
             // including marked text selection which is imporant for proper input
             // when IME input method is used.

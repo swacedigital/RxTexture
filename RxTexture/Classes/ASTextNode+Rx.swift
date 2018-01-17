@@ -13,8 +13,8 @@ import AsyncDisplayKit
 
 extension Reactive where Base: ASTextNode {
 
-    public var title: UIBindingObserver<Base, NSAttributedString> {
-        return UIBindingObserver(UIElement: self.base) { control, value in
+    public var title: Binder<NSAttributedString> {
+        return Binder(self.base) { control, value in
             control.attributedText = value
         }
     }

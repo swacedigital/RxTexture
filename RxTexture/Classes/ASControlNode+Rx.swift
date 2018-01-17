@@ -21,8 +21,8 @@ extension Reactive where Base: ASControlNode {
 
 extension Reactive where Base: ASButtonNode {
 
-    public var title: UIBindingObserver<Base, NSAttributedString> {
-        return UIBindingObserver(UIElement: self.base) { control, value in
+    public var title: Binder<NSAttributedString> {
+        return Binder(self.base) { control, value in
             control.setAttributedTitle(value, for: .normal)
         }
     }
@@ -30,8 +30,8 @@ extension Reactive where Base: ASButtonNode {
 
 extension Reactive where Base: ASEditableTextNode {
 
-    public var title: UIBindingObserver<Base, NSAttributedString> {
-        return UIBindingObserver(UIElement: self.base) { control, value in
+    public var title: Binder<NSAttributedString> {
+        return Binder(self.base) { control, value in
             control.attributedText = value
         }
     }
@@ -41,15 +41,15 @@ extension Reactive where Base: ASEditableTextNode {
 extension Reactive where Base: ASControlNode {
 
     /// Bindable sink for `enabled` property.
-    public var isEnabled: UIBindingObserver<Base, Bool> {
-        return UIBindingObserver(UIElement: self.base) { control, value in
+    public var isEnabled: Binder<Bool> {
+        return Binder(self.base) { control, value in
             control.isEnabled = value
         }
     }
 
     /// Bindable sink for `selected` property.
-    public var isSelected: UIBindingObserver<Base, Bool> {
-        return UIBindingObserver(UIElement: self.base) { control, selected in
+    public var isSelected: Binder<Bool> {
+        return Binder(self.base) { control, selected in
             control.isSelected = selected
         }
     }
@@ -92,7 +92,7 @@ extension ASControlNode {
                 }
                 .startWith(getter(existingSelf))
         }
-        return ControlProperty(values: values, valueSink: UIBindingObserver(UIElement: control) { control, value in
+        return ControlProperty(values: values, valueSink: Binder(control) { control, value in
             setter(control, value)
         })
     }
