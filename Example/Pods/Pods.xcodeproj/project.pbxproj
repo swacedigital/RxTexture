@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01DC0559200F3FC80032DBA9 /* ASControlTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC0554200F3FC80032DBA9 /* ASControlTarget.swift */; };
-		01DC055A200F3FC80032DBA9 /* ASEditableTextNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC0555200F3FC80032DBA9 /* ASEditableTextNode+Rx.swift */; };
-		01DC055B200F3FC80032DBA9 /* ASTextNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC0556200F3FC80032DBA9 /* ASTextNode+Rx.swift */; };
-		01DC055C200F3FC80032DBA9 /* ASImageNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC0557200F3FC80032DBA9 /* ASImageNode+Rx.swift */; };
-		01DC055D200F3FC80032DBA9 /* ASControlNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC0558200F3FC80032DBA9 /* ASControlNode+Rx.swift */; };
 		13AF00A5726E6914E033B280BA6A03B4 /* Pods-RxTexture_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8915E08912E9686A207575512950DFE /* Pods-RxTexture_Tests-dummy.m */; };
 		2E726518201A75CE58EB94872B0164BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		4F925CD5E5553EEC7CF8FF369B5B539A /* RxTexture-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBCF536C8045A61D5A4C99EB9657CD1 /* RxTexture-dummy.m */; };
@@ -19,6 +14,12 @@
 		6535AD14392DFF02E99C782BA4D9567A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		739F7AAF4BECF864F6E3D7E2E6717748 /* RxTexture-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 580F0ACBEEDAC55A612ED49EE4CF70F9 /* RxTexture-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF887F7BC15168EE72380CBCA93D3F64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E1B1FFDF201C8957003FB4AF /* ASControlNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1FFD9201C8957003FB4AF /* ASControlNode+Rx.swift */; };
+		E1B1FFE0201C8957003FB4AF /* ASControlTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1FFDA201C8957003FB4AF /* ASControlTarget.swift */; };
+		E1B1FFE1201C8957003FB4AF /* ASDisplayNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1FFDB201C8957003FB4AF /* ASDisplayNode+Rx.swift */; };
+		E1B1FFE2201C8957003FB4AF /* ASEditableTextNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1FFDC201C8957003FB4AF /* ASEditableTextNode+Rx.swift */; };
+		E1B1FFE3201C8957003FB4AF /* ASImageNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1FFDD201C8957003FB4AF /* ASImageNode+Rx.swift */; };
+		E1B1FFE4201C8957003FB4AF /* ASTextNode+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1FFDE201C8957003FB4AF /* ASTextNode+Rx.swift */; };
 		E691EABF7338E8DB48CE097CA3EA4666 /* Pods-RxTexture_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54CB61AD218C56C0B43EE38B51E7113D /* Pods-RxTexture_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB5A0EDB5F992730A5945209258E4C47 /* Pods-RxTexture_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A322456A186003DA27CE7949EDD41D2 /* Pods-RxTexture_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -34,11 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01DC0554200F3FC80032DBA9 /* ASControlTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ASControlTarget.swift; path = ../RxTexture/Classes/ASControlTarget.swift; sourceTree = "<group>"; };
-		01DC0555200F3FC80032DBA9 /* ASEditableTextNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ASEditableTextNode+Rx.swift"; path = "../RxTexture/Classes/ASEditableTextNode+Rx.swift"; sourceTree = "<group>"; };
-		01DC0556200F3FC80032DBA9 /* ASTextNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ASTextNode+Rx.swift"; path = "../RxTexture/Classes/ASTextNode+Rx.swift"; sourceTree = "<group>"; };
-		01DC0557200F3FC80032DBA9 /* ASImageNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ASImageNode+Rx.swift"; path = "../RxTexture/Classes/ASImageNode+Rx.swift"; sourceTree = "<group>"; };
-		01DC0558200F3FC80032DBA9 /* ASControlNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ASControlNode+Rx.swift"; path = "../RxTexture/Classes/ASControlNode+Rx.swift"; sourceTree = "<group>"; };
 		0778321884C6D243B553E258C4137BAF /* RxTexture-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RxTexture-prefix.pch"; sourceTree = "<group>"; };
 		14FEA57E749E3E42ACD68A9A054D8BCC /* Pods-RxTexture_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RxTexture_Example-dummy.m"; sourceTree = "<group>"; };
 		1CBCF536C8045A61D5A4C99EB9657CD1 /* RxTexture-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RxTexture-dummy.m"; sourceTree = "<group>"; };
@@ -65,6 +61,13 @@
 		CA46AF0A78C198CF4DB1E8454A838374 /* RxTexture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxTexture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9A89908C9C0995812E5A043384B1DA /* Pods_RxTexture_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTexture_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFCEEC1E6C19325E1814DA99CEF2B067 /* Pods-RxTexture_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RxTexture_Tests.modulemap"; sourceTree = "<group>"; };
+		E1B1FFD8201C8957003FB4AF /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E1B1FFD9201C8957003FB4AF /* ASControlNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASControlNode+Rx.swift"; sourceTree = "<group>"; };
+		E1B1FFDA201C8957003FB4AF /* ASControlTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASControlTarget.swift; sourceTree = "<group>"; };
+		E1B1FFDB201C8957003FB4AF /* ASDisplayNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASDisplayNode+Rx.swift"; sourceTree = "<group>"; };
+		E1B1FFDC201C8957003FB4AF /* ASEditableTextNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASEditableTextNode+Rx.swift"; sourceTree = "<group>"; };
+		E1B1FFDD201C8957003FB4AF /* ASImageNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASImageNode+Rx.swift"; sourceTree = "<group>"; };
+		E1B1FFDE201C8957003FB4AF /* ASTextNode+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ASTextNode+Rx.swift"; sourceTree = "<group>"; };
 		E41896E44D51FEF510D11E328D4F0871 /* Pods-RxTexture_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RxTexture_Example.modulemap"; sourceTree = "<group>"; };
 		E5F69070044B58A89DB83A4CFA08BFD8 /* RxTexture.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RxTexture.modulemap; sourceTree = "<group>"; };
 		E70D3FAA733EB5D235C303902AA22DC2 /* Pods-RxTexture_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RxTexture_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -100,18 +103,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01DC0553200F3FB50032DBA9 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				01DC0558200F3FC80032DBA9 /* ASControlNode+Rx.swift */,
-				01DC0554200F3FC80032DBA9 /* ASControlTarget.swift */,
-				01DC0555200F3FC80032DBA9 /* ASEditableTextNode+Rx.swift */,
-				01DC0557200F3FC80032DBA9 /* ASImageNode+Rx.swift */,
-				01DC0556200F3FC80032DBA9 /* ASTextNode+Rx.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		173A1AFAF7AA2DF0DCA42845360A6E6A /* Pods-RxTexture_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,7 +124,7 @@
 		1B0B882EE7FD496FFD4A8858290F141A /* RxTexture */ = {
 			isa = PBXGroup;
 			children = (
-				01DC0553200F3FB50032DBA9 /* Classes */,
+				E1B1FFD7201C8957003FB4AF /* Classes */,
 				B6B151ABB0493FFC2E81CFD13D4AA075 /* Support Files */,
 			);
 			name = RxTexture;
@@ -224,6 +215,21 @@
 				259A36202CCEAB0DBA654D0A7819935F /* Pods-RxTexture_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E1B1FFD7201C8957003FB4AF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E1B1FFD8201C8957003FB4AF /* .gitkeep */,
+				E1B1FFD9201C8957003FB4AF /* ASControlNode+Rx.swift */,
+				E1B1FFDA201C8957003FB4AF /* ASControlTarget.swift */,
+				E1B1FFDB201C8957003FB4AF /* ASDisplayNode+Rx.swift */,
+				E1B1FFDC201C8957003FB4AF /* ASEditableTextNode+Rx.swift */,
+				E1B1FFDD201C8957003FB4AF /* ASImageNode+Rx.swift */,
+				E1B1FFDE201C8957003FB4AF /* ASTextNode+Rx.swift */,
+			);
+			name = Classes;
+			path = RxTexture/Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +326,9 @@
 					9BD7766952FD88DE5B1A6B33D55E2AF7 = {
 						LastSwiftMigration = 0920;
 					};
+					E4CDAB025B04BD782BA520652AC8E9B4 = {
+						LastSwiftMigration = 0920;
+					};
 				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -354,12 +363,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01DC0559200F3FC80032DBA9 /* ASControlTarget.swift in Sources */,
+				E1B1FFE4201C8957003FB4AF /* ASTextNode+Rx.swift in Sources */,
+				E1B1FFE2201C8957003FB4AF /* ASEditableTextNode+Rx.swift in Sources */,
+				E1B1FFE0201C8957003FB4AF /* ASControlTarget.swift in Sources */,
 				4F925CD5E5553EEC7CF8FF369B5B539A /* RxTexture-dummy.m in Sources */,
-				01DC055B200F3FC80032DBA9 /* ASTextNode+Rx.swift in Sources */,
-				01DC055D200F3FC80032DBA9 /* ASControlNode+Rx.swift in Sources */,
-				01DC055C200F3FC80032DBA9 /* ASImageNode+Rx.swift in Sources */,
-				01DC055A200F3FC80032DBA9 /* ASEditableTextNode+Rx.swift in Sources */,
+				E1B1FFE3201C8957003FB4AF /* ASImageNode+Rx.swift in Sources */,
+				E1B1FFE1201C8957003FB4AF /* ASDisplayNode+Rx.swift in Sources */,
+				E1B1FFDF201C8957003FB4AF /* ASControlNode+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2B02470C340626EB539859CF0145E3B7 /* Pods-RxTexture_Example.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -442,6 +453,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -513,6 +525,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 466887B492F6B2AF5B26B8A516E37DC5 /* Pods-RxTexture_Example.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -537,6 +550,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
