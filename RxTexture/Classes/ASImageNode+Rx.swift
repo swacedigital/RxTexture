@@ -26,6 +26,7 @@ extension Reactive where Base: ASNetworkImageNode {
     /// Bindable sink for `url` property.
     public var url: Binder<URL> {
         return Binder(self.base) { control, value in
+            control.image = nil
             control.url = value
         }
     }
