@@ -1,6 +1,5 @@
 //
 //  ASControlTarget.swift
-//  Godisdags
 //
 //  Created by Andreas Östman on 2018-01-16.
 //  Copyright © 2018 Froggli Studios. All rights reserved.
@@ -11,11 +10,11 @@ import RxSwift
 import RxCocoa
 import AsyncDisplayKit
 
-typealias Control = ASControlNode
-typealias ControlEvents = ASControlNodeEvent
 
 // This should be only used from `MainScheduler`
 final class ASControlTarget: ASRxTarget {
+    typealias Control = ASControlNode
+    typealias ControlEvents = ASControlNodeEvent
     typealias Callback = (Control) -> Void
 
     let selector: Selector = #selector(ASControlTarget.eventHandler(_:))
@@ -24,7 +23,7 @@ final class ASControlTarget: ASRxTarget {
     let controlEvents: ASControlNodeEvent
     var callback: Callback?
 
-    init(control: Control, controlEvents: ASControlNodeEvent, callback: @escaping Callback) {
+    init(control: Control, controlEvents: ControlEvents, callback: @escaping Callback) {
         MainScheduler.ensureExecutingOnScheduler()
 
         self.control = control

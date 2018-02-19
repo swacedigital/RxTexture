@@ -1,6 +1,5 @@
 //
 //  ASTextNode+Rx.swift
-//  Godisdags
 //
 //  Created by Andreas Östman on 2018-01-16.
 //  Copyright © 2018 Froggli Studios. All rights reserved.
