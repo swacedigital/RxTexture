@@ -23,7 +23,7 @@ extension Reactive where Base: ASTableNode {
         return ControlProperty(values: proxy.contentOffsetBehaviorSubject, valueSink: bindingObserver)
     }
     
-    var reachedBottom: ControlEvent<Void> {
+    public var reachedBottom: ControlEvent<Void> {
         let observable = contentOffset
             .flatMap { [weak base] contentOffset -> Observable<Void> in
                 guard let node = base else {
