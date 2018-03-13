@@ -109,7 +109,7 @@ extension Reactive where Base: ASTableNode {
         
         
         public func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-            return self._forwardToDelegate?.tableView(tableView, editActionsForRowAt: indexPath)
+            return self._forwardToDelegate?.tableView?(tableView, editActionsForRowAt: indexPath)
         }
         
 //        @available(iOS 11.0, *)
