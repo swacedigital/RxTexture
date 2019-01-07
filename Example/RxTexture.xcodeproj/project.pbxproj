@@ -173,7 +173,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				C7A5DE62B2DB824623722CCC /* [CP] Embed Pods Frameworks */,
-				DA130CEEC0928CBACCC44839 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
