@@ -16,8 +16,9 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "8.0"
   },
+  "swift_version": "4.2",
   "source_files": "RxTexture/Classes/**/*",
   "dependencies": {
     "RxSwift": [
