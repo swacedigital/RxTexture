@@ -43,9 +43,10 @@ extension Reactive where Base: ASTableNode {
     }
 
     /// Reactive wrapper for `itemSelected`
-    public var itemSelected: Observable<IndexPath> {
+    public var itemSelected: ControlEvent<IndexPath> {
         let proxy = RxTextureTableNodeDelegateProxy.proxy(for: base)
-        return proxy.methodInvoked(#selector(ASTableDelegate.tableNode(_:didSelectRowAt:))).map{ params in params[1] as! IndexPath  }
+        let source = proxy.methodInvoked(#selector(ASTableDelegate.tableNode(_:didSelectRowAt:))).map{ params in params[1] as! IndexPath  }
+        return ControlEvent(events: source)
     }
 }
     
@@ -111,10 +112,10 @@ extension Reactive where Base: ASTableNode {
         }
         
         public func tableNode(_ tableNode: ASTableNode, didSelectRowAt indexPath: IndexPath) {
-            if let subject = _itemSelectedPublishSubject {
-                subject.on(.next(indexPath))
+            itemSelectedPublishSubject.on(.next(indexPath))
+            if forwardToDelegate()?.responds(to: #selector(ASTableDelegate.tableNode(_:didSelectRowAt:))) == true {
+                self._forwardToDelegate?.tableNode(tableNode, didSelectRowAt: indexPath)
             }
-            self._forwardToDelegate?.tableNode(tableNode, didSelectRowAt: indexPath)
         }
         
         /// For more information take a look at `DelegateProxyType`.
