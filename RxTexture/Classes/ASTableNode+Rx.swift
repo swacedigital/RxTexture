@@ -43,9 +43,9 @@ extension Reactive where Base: ASTableNode {
     }
 
     /// Reactive wrapper for `itemSelected`
-    public var itemSelected: ControlEvent<IndexPath> {
+    public var itemSelected: Observable<IndexPath> {
         let proxy = RxTextureTableNodeDelegateProxy.proxy(for: base)
-        return ControlEvent(events: proxy.itemSelectedPublishSubject)
+        return proxy.methodInvoked(#selector(ASTableDelegate.tableNode(_:didSelectRowAt:))).map{ params in params[1] as! IndexPath  }
     }
 }
     
@@ -77,7 +77,7 @@ extension Reactive where Base: ASTableNode {
         fileprivate var _contentOffsetPublishSubject: PublishSubject<()>?
         fileprivate var _itemSelectedPublishSubject: PublishSubject<IndexPath>?
         
-        internal var itemSelectedPublishSubject: PublishSubject<IndexPath>? {
+        internal var itemSelectedPublishSubject: PublishSubject<IndexPath> {
             if let subject = _itemSelectedPublishSubject {
                 return subject
             }
@@ -108,14 +108,6 @@ extension Reactive where Base: ASTableNode {
             _contentOffsetPublishSubject = subject
             
             return subject
-        }
-        
-        // MARK: delegate methods
-        public func tableNode(_ tableNode: ASTableNode, didSelectRowAt indexPath: IndexPath) {
-            if let subject = _itemSelectedPublishSubject {
-                subject.on(.next(indexPath))
-            }
-            self._forwardToDelegate?.tableNode(tableNode, didSelectRowAt: indexPath)
         }
         
         /// For more information take a look at `DelegateProxyType`.
