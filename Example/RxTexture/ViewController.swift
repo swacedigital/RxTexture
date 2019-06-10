@@ -7,18 +7,21 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
+import Texture
 
 class ViewController: UIViewController {
-
+    
+    private lazy var list = ASTableNode()
+    private let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        list.rx.itemSelected
+            .subscribe(onNext: { print("Item was selected: ", $0) })
+            .disposed(by: disposeBag)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 
