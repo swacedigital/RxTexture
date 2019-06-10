@@ -18,8 +18,10 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  This library was created as a thin wrapper between Texture nodes to access properties reactivly,
+  as is possible with common most UIKit views through the use of RxCocoa.
+  NOTE: PR:s are most welcome.
+  DESC
 
   s.homepage         = 'https://github.com/swacedigital/RxTexture'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
