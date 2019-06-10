@@ -10,6 +10,14 @@ import RxCocoa.Swift
 import RxSwift.Swift
 import AsyncDisplayKit
 
+fileprivate func castOrThrow<T>(_ resultType: T.Type, _ object: Any) throws -> T {
+    guard let returnValue = object as? T else {
+        throw RxCocoaError.castingError(object: object, targetType: resultType)
+    }
+    
+    return returnValue
+}
+
 extension Reactive where Base: ASTableNode {
     
     /// Reactive wrapper for `contentOffset`.
@@ -45,7 +53,9 @@ extension Reactive where Base: ASTableNode {
     /// Reactive wrapper for `itemSelected`
     public var itemSelected: ControlEvent<IndexPath> {
         let proxy = RxTextureTableNodeDelegateProxy.proxy(for: base)
-        let source = proxy.methodInvoked(#selector(ASTableDelegate.tableNode(_:didSelectRowAt:))).map{ params in params[1] as! IndexPath  }
+        let source = proxy.methodInvoked(#selector(ASTableDelegate.tableNode(_:didSelectRowAt:))).map{ params in
+            return try castOrThrow(IndexPath.self, params[1])
+        }
         return ControlEvent(events: source)
     }
 }
