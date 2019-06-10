@@ -23,6 +23,7 @@ extension Reactive where Base: ASTableNode {
         return ControlProperty(values: proxy.contentOffsetBehaviorSubject, valueSink: bindingObserver)
     }
     
+    /// Reactive wrapper for `reachedBottom`.
     public var reachedBottom: ControlEvent<Void> {
         let observable = contentOffset
             .flatMap { [weak base] contentOffset -> Observable<Void> in
@@ -39,6 +40,12 @@ extension Reactive where Base: ASTableNode {
         }
         
         return ControlEvent(events: observable)
+    }
+
+    /// Reactive wrapper for `itemSelected`
+    public var itemSelected: ControlEvent<IndexPath> {
+        let proxy = RxTextureTableNodeDelegateProxy.proxy(for: base)
+        return ControlEvent(events: proxy.itemSelectedPublishSubject)
     }
 }
     
