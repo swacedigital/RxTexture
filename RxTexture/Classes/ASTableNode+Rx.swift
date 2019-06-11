@@ -88,14 +88,14 @@ extension Reactive where Base: ASTableNode {
         fileprivate var _contentOffsetPublishSubject: PublishSubject<()>?
 //        fileprivate var _itemSelectedPublishSubject: PublishSubject<IndexPath>?
         
-        internal var itemSelectedPublishSubject: PublishSubject<IndexPath> {
-            if let subject = _itemSelectedPublishSubject {
-                return subject
-            }
-            let subject = PublishSubject<IndexPath>()
-            _itemSelectedPublishSubject = subject
-            return subject
-        }
+//        internal var itemSelectedPublishSubject: PublishSubject<IndexPath> {
+//            if let subject = _itemSelectedPublishSubject {
+//                return subject
+//            }
+//            let subject = PublishSubject<IndexPath>()
+//            _itemSelectedPublishSubject = subject
+//            return subject
+//        }
         
         /// Optimized version used for observing content offset changes.
         internal var contentOffsetBehaviorSubject: BehaviorSubject<CGPoint> {
