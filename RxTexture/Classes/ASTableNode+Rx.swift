@@ -51,13 +51,13 @@ extension Reactive where Base: ASTableNode {
     }
 
     /// Reactive wrapper for `itemSelected`
-    public var itemSelected: ControlEvent<IndexPath> {
-        let proxy = RxTextureTableNodeDelegateProxy.proxy(for: base)
-        let source = proxy.methodInvoked(#selector(ASTableDelegate.tableNode(_:didSelectRowAt:))).map{ params in
-            return try castOrThrow(IndexPath.self, params[1])
-        }
-        return ControlEvent(events: source)
-    }
+//    public var itemSelected: ControlEvent<IndexPath> {
+//        let proxy = RxTextureTableNodeDelegateProxy.proxy(for: base)
+//        let source = proxy.methodInvoked(#selector(ASTableDelegate.tableNode(_:didSelectRowAt:))).map{ params in
+//            return try castOrThrow(IndexPath.self, params[1])
+//        }
+//        return ControlEvent(events: source)
+//    }
 }
     
     extension ASTableNode: HasDelegate {
@@ -86,7 +86,7 @@ extension Reactive where Base: ASTableNode {
         
         fileprivate var _contentOffsetBehaviorSubject: BehaviorSubject<CGPoint>?
         fileprivate var _contentOffsetPublishSubject: PublishSubject<()>?
-        fileprivate var _itemSelectedPublishSubject: PublishSubject<IndexPath>?
+//        fileprivate var _itemSelectedPublishSubject: PublishSubject<IndexPath>?
         
         internal var itemSelectedPublishSubject: PublishSubject<IndexPath> {
             if let subject = _itemSelectedPublishSubject {
@@ -121,12 +121,12 @@ extension Reactive where Base: ASTableNode {
             return subject
         }
         
-        public func tableNode(_ tableNode: ASTableNode, didSelectRowAt indexPath: IndexPath) {
-            itemSelectedPublishSubject.on(.next(indexPath))
-            if forwardToDelegate()?.responds(to: #selector(ASTableDelegate.tableNode(_:didSelectRowAt:))) == true {
-                self._forwardToDelegate?.tableNode(tableNode, didSelectRowAt: indexPath)
-            }
-        }
+//        public func tableNode(_ tableNode: ASTableNode, didSelectRowAt indexPath: IndexPath) {
+//            itemSelectedPublishSubject.on(.next(indexPath))
+//            if forwardToDelegate()?.responds(to: #selector(ASTableDelegate.tableNode(_:didSelectRowAt:))) == true {
+//                self._forwardToDelegate?.tableNode(tableNode, didSelectRowAt: indexPath)
+//            }
+//        }
         
         /// For more information take a look at `DelegateProxyType`.
         public func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -152,9 +152,9 @@ extension Reactive where Base: ASTableNode {
             if let subject = _contentOffsetPublishSubject {
                 subject.on(.completed)
             }
-            if let subject = _itemSelectedPublishSubject {
-                subject.on(.completed)
-            }
+//            if let subject = _itemSelectedPublishSubject {
+//                subject.on(.completed)
+//            }
         }
 }
 
